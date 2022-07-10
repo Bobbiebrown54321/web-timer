@@ -14,7 +14,7 @@ function Timer(){
 
     const handleSubmit=(e)=>{
         e.preventDefault()
-       setTimerSet({hour: parseInt(info.hour), minutes: parseInt(info.minutes), note: info.note})
+       setTimerSet({hour: +info.hour, minutes: +info.minutes, note: info.note})
        setInfo({hour: '', minutes: '', note: ''})
       
  
@@ -38,10 +38,10 @@ function Timer(){
         <form onSubmit={(e)=>handleSubmit(e)}>
             <div>
         
-        <input
+        <textarea
             className="textInput"
-            type="text"
             name="note"
+            rows='8'
             value={info.note}
             onChange={handleChange}
             placeholder="Text here"
@@ -64,8 +64,8 @@ function Timer(){
             onChange={handleChange}
            /></label>
            <button type="submit" >Set</button>
-        </form>
-    </div>
+        </form></div>
+        
     </div>)
 }
 
