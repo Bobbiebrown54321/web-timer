@@ -50,7 +50,7 @@ function Timer(){
        <label>
         <input
             className="timeInput"
-            type="text"
+            type="number"
             name="hour"
             value={info.hour}
             onChange={handleChange}
@@ -58,14 +58,14 @@ function Timer(){
            <label>:
         <input
             className="timeInput"
-            type="text"
+            type="number"
             name="minutes"
             value={info.minutes}
             onChange={handleChange}
            /></label>
            <button type="submit" >Set</button>
-        </form></div>
-        <p>{info.note} {info.hour} {info.minutes} </p>
+        </form>
+    </div>
     </div>)
 }
 
