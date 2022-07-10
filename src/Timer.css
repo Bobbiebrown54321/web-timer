@@ -1,0 +1,30 @@
+body {
+    background-image: url('https://thumbs.dreamstime.com/z/alarm-clock-seamless-background-timer-deadline-hurry-wake-up-concept-vector-wallpaper-packaging-textiles-website-blue-156697190.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.timeInput {
+  width: 50px;
+  margin: 5px;
+}
+
+.textInput {
+    width: 150px;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+    width: 450px;
+    height: 150px;
+
+ 
+}
+
+
+
